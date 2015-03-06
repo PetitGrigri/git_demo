@@ -44,6 +44,8 @@
 
 	//visualisation des modifications lors d’un commit
 	git show numéro_du_sha
+
+	//le fichier . gitignore permet d’indiquer à git de ne pas prendre les fichiers qui seront indiqués (tel que les fichiers de configurations)
 	
 
 	
