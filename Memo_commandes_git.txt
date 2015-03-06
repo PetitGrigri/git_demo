@@ -38,6 +38,12 @@
 
 	//permet d’envoyer le contenu de la branche indiquée dans la branche en cours
 	git merge nom_de_la_branche
+
+	//permet de savoir qu’elles ont été les actions sur un fichier (identifiée par le numéro_du_sha)
+	git blame nom_fichier
+
+	//visualisation des modifications lors d’un commit
+	git show numéro_du_sha
 	
 
 	
