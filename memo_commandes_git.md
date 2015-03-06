@@ -38,7 +38,7 @@ récupération du code modifié par d'autre personnes (on peut tout comme push, 
 - création d’une branche « test » (si on a ajouté -b ; on va immédiatement dessus)
 - switch vers la branche test
 - permet de supprimer une branche
-- push d’une suppression de bran sur le remote
+- push d’une suppression de branch sur le remote
 
 ###permet d’envoyer le contenu de la branche indiquée (nom_de_la_branche) dans la branche en cours (pour savoir ou on est, on peut utiliser pwd)
 git merge nom_de_la_branche
