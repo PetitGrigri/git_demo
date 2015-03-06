@@ -30,3 +30,14 @@
 	
 	//récupération du code modifié par d'autre personnes (on peut tout comme push, ajouter la branche qu'on récupère. facultatif)
 	git pull origin master
+
+	//visualisation de la branche en cours / création d’une branche « test » / switch vers la branche test
+	git branch
+	git branch test
+	git checkout test
+
+	//permet d’envoyer le contenu de la branche indiquée dans la branche en cours
+	git merge nom_de_la_branche
+	
+
+	
