@@ -33,8 +33,11 @@ Envois d’un ou de plusieurs commit sur le « remote » indiqué (origin) et 
 ###git pull origin master
 récupération du code modifié par d'autre personnes (on peut tout comme push, ajouter la branche qu'on récupère)
 
-###git branch / git branch test et  git checkout test
-visualisation de la branche en cours / création d’une branche « test » / switch vers la branche test
+###git branch / git branch test / git checkout test / git branch -d ma_branch_a_supprimer
+- visualisation de la branche en cours / 
+- création d’une branche « test » (si on a ajouté -b ; on va immédiatement dessus)
+- switch vers la branche test
+- permet de supprimer une branche
 
 ###permet d’envoyer le contenu de la branche indiquée (nom_de_la_branche) dans la branche en cours (pour savoir ou on est, on peut utiliser pwd)
 git merge nom_de_la_branche
