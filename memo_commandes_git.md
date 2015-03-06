@@ -1,52 +1,53 @@
 #Commande Git
 
-##initialiser un dossier dans lequel on est comme un dossier git
-git init
+###git init
+Permet d’indiquer que le dossier dans lequel on se trouve  pwd pour savoir où on se trouve) devra être géré comme un repository git
 
-##voir l’état du dossier en cours (nouveau fichier, modifications…)
-git status
+###git status
+Permet de connaitre l’état du dossier en cours (nouveau fichier, modifications, suppressions…)
 
-##permet d’indiquer à git de gérer une nouvelle modification (ajout, motif..)
-git add xxxxxx
+###git add nom_du_fichier_ou_repertoire
+Permet d’indiquer à git de gérer « nom_du_fichier_ou_repertoire » (en l’ajoutant à son « index)
 
-##commit des modifications et ajout d’un message
-git commit -m « Ajout d’un nouveau fichier »
+###git commit -m « Ajout d’un nouveau fichier »
+Commit des modifications réalisées
+-m  : permet d’indiquer le message du commit
+-a  : permet d’indiquer de réaliser le commit avec les fichiers déjà pris en comptes par git (lors des précédents commit)
+-am : -a et -m en même temps
 
-##commit mais prise en charge des fichiers sans faire add précédemment (valable pour les fichiers déjà ajoutés)
-git commit -a -m « un nouveau ajout…. »	
-git commit -am « un ajout encore »
+###git log
+Visualisation de ce qui a été fait (les commit réalisées)
 
-##visualisation de ce qui a été fait (q pour arrêter le log)
-git log
+###git checkout plus_le_sha_code_d_un_commit OU nom_de_la_branche 
+git checkout permet de vérifier un commit (via son code sa) ou de se « placer » une branche
 
-##visualisation d’un commit précédent / puis annulation de la visualisation d’un ancien commit
-git checkout plus_le_code_code_d_un_commit
-git checkout master 
+###git clone adresse_du_dépot
+clone d’un dépôt git (il faut ici indiquer l’adresse du dépôt)
 
-##clone d’un dépôt git (ici c’est le dépôt github de react/facebook)
-git clone https://github.com/facebook/react.git
+###git push origin master
+Envois d’un ou de plusieurs commit sur le « remote » indiqué (origin) et sur la branche indiquée (master)
+« origin » et « master » sont des conventions  
+« master » est la branche « principale » d’un dépot/remote
+« origin » est l’endroit ou se trouve le remote //TODO essayé être plus précis ici
 
-##Envois d’un ou de plusieurs commit (modifications) sur le dépôt original (par exemple un dépôt github) 
-git push origin master
+###git pull origin master
+récupération du code modifié par d'autre personnes (on peut tout comme push, ajouter la branche qu'on récupère)
 
-##récupération du code modifié par d'autre personnes (on peut tout comme push, ajouter la branche qu'on récupère. facultatif)
-git pull origin master
+###git branch / git branch test et  git checkout test
+visualisation de la branche en cours / création d’une branche « test » / switch vers la branche test
 
-##visualisation de la branche en cours / création d’une branche « test » / switch vers la branche test
-git branch
-git branch test
-git checkout test
-
-##permet d’envoyer le contenu de la branche indiquée dans la branche en cours
+###permet d’envoyer le contenu de la branche indiquée (nom_de_la_branche) dans la branche en cours (pour savoir ou on est, on peut utiliser pwd)
 git merge nom_de_la_branche
 
-##permet de savoir qu’elles ont été les actions sur un fichier (identifiée par le numéro_du_sha)
-git blame nom_fichier
+###git blame nom_fichier
+Permet de savoir qu’elles ont été les actions sur un fichier (identifiée par le numéro_du_sha)
 
-##visualisation des modifications lors d’un commit
-git show numéro_du_sha
 
-##le fichier . gitignore permet d’indiquer à git de ne pas prendre les fichiers qui seront indiqués (tel que les fichiers de configurations)
+###git show numéro_du_sha
+Visualisation des modifications effectuées lors d’un commit
 
+###le fichier . gitignore 
+Il permet d’indiquer à git de ne pas prendre en compte les fichiers qui seront indiqués (tel que les fichiers de configurations)
+NE JAMAIS publier sur GITHUB OU AUTRE des fichiers de configurations ! !
 
 
