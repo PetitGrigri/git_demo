@@ -25,7 +25,7 @@
 	//clone d’un dépôt git (ici c’est le dépôt github de react/facebook)
 	git clone https://github.com/facebook/react.git
 
-	//Envois d’un ou de plusieurs commit sur le dépôt original (par exemple un dépôt github) 
+	//Envois d’un ou de plusieurs commit (modifications) sur le dépôt original (par exemple un dépôt github) 
 	git push origin master
 	
 	//récupération du code modifié par d'autre personnes (on peut tout comme push, ajouter la branche qu'on récupère. facultatif)
