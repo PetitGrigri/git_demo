@@ -22,6 +22,8 @@
 	git checkout plus_le_code_code_d_un_commit
 	git checkout master 
 
-	
 	//clone d’un dépôt git (ici c’est le dépôt github de react/facebook)
 	git clone https://github.com/facebook/react.git
+
+	//Envois d’un ou de plusieurs commit sur le dépôt original (par exemple un dépôt github) 
+	git push origin
