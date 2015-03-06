@@ -50,4 +50,7 @@ Visualisation des modifications effectuées lors d’un commit
 Il permet d’indiquer à git de ne pas prendre en compte les fichiers qui seront indiqués (tel que les fichiers de configurations)
 NE JAMAIS publier sur GITHUB OU AUTRE des fichiers de configurations ! !
 
-
+###git stash / git stash pop
+- Permet « d’enregistrer » le travail en cours pour revenir à l’état initial avant nos modifications (pour travailler sur des choses plus urgentes sans pour autant faire de « commit superflus »)
+  Permet aussi lorsqu’on switch de branch de ne pas perdre notre travail
+- Permet de retrouver le travail que l’on effectuait avant le stash (attention une fois git stash pop utilisé, la mémorisation du travail effectué est supprimée. Il faudra pensé à refaire un autre git stash si on a encore à changer de branch ou travailler sur autre chose
