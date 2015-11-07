@@ -1,4 +1,4 @@
-#Commande Git
+#Commandes Git
 
 ###git init
 Permet d’indiquer que le dossier dans lequel on se trouve  pwd pour savoir où on se trouve) devra être géré comme un repository git
@@ -58,3 +58,8 @@ NE JAMAIS publier sur GITHUB OU AUTRE des fichiers de configurations ! !
 - Permet « d’enregistrer » le travail en cours pour revenir à l’état initial avant nos modifications (pour travailler sur des choses plus urgentes sans pour autant faire de « commit superflus »)
   Permet aussi lorsqu’on switch de branch de ne pas perdre notre travail
 - Permet de retrouver le travail que l’on effectuait avant le stash (attention une fois git stash pop utilisé, la mémorisation du travail effectué est supprimée. Il faudra pensé à refaire un autre git stash si on a encore à changer de branch ou travailler sur autre chose
+
+###git config --global core.excludesfile ~/.gitignore_global
+Ajouter un fichier .gitignore_global permettant de ne pas prendre en compte les particularité des fichiers liés à votre OS
+Le remplissage se fera ensuite de la même manière qu’un fichier .gitignore
+	
